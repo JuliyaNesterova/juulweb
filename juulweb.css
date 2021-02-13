@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Noto+Sans+KR:wght@700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+body {
+    margin: 0;
+    animation-name:example;
+    animation-duration:50s;
+    animation-iteration-count: infinite;
+    background-color:rgb(235, 163, 29);
+    animation: alternate;
+}
+
+footer,main{
+    padding:3% 10%;
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+header{
+    font-family: 'Sriracha', cursive;
+    animation-name: textchange;
+    animation-duration:8s;
+    animation-iteration-count: infinite;
+    background-attachment: fixed;
+    background-image:url(img/wallpaperflare.com_wallpaper\ \(1\).jpg);
+    padding:5% 5%;
+    font-size: 35px;
+    font-weight:bolder;
+    color:rgb(125, 114, 223);
+}
+html{
+    scroll-behavior: smooth;
+}
+
+h1,h3{
+    font-family: 'Hachi Maru Pop', cursive;
+    font-weight:bold;
+}
+h2{
+    font-weight: bold;
+}
+img{
+    height: 200px;
+}
+
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    flex-flow: row wrap;
+    align-content: space-between;
+    
+}
+footer{
+    font-weight:bold;
+    font-size: large;
+}
+button{
+    display: block;
+    padding:15px 30px;
+    
+    border: none;
+    outline: none;
+    border-radius: 40%;
+    font-weight:bold;
+    font-size: large;
+    background-color:blueviolet;
+    position: relative;
+}
+a{
+    text-decoration:none;
+    color:rgb(0, 0, 0);
+}
+.link{
+    border-radius:50%;
+    padding: 0px 5px;
+    background-color:rgb(114, 55, 192);
+    animation-name: rainbow;
+    animation-duration:8s;
+    animation-iteration-count: infinite;
+    display: flex;
+    justify-content:flex-start;
+    width: 50px;
+    color:aliceblue;
+    letter-spacing: .25em;
+    text-transform: uppercase;
+    
+    
+}
+.link:hover{
+    padding:0px 10px;
+    width:310px;
+    border-radius:100px;
+    
+    
+
+}
+@keyframes rainbow{
+    100% { background-color: rgb(151, 82, 26);}
+    50% { background-color: rgb(110, 36, 230);}
+}
+@keyframes example {
+    20%   {background-color: #af4e21;}
+    40%   {background-color: rgb(133, 56, 43);}
+    60%  {background-color: rgb(223, 151, 43);}
+    80%  {background-color: rgb(128, 46, 21);}
+    100% {background-color: rgb(206, 123, 76);}
+  }
+
+  @keyframes textchange {
+    100% { color: rgb(151, 82, 26);}
+    50% { color: rgb(110, 36, 230);}
+   
+  }
+
+button:hover {
+    animation-name:example;
+    animation-duration:10s;
+    
+    padding:17px 35px;
+    animation-iteration-count: 10;
+    
+
+}
+
+.start{
+    position: fixed;
+    right: 50px;
+    top: 50px;
+}
+.gridm{
+    display: grid;
+    margin-left:150px;
+    margin-top: 50px;
+    grid-template-columns: 100px 400px 200px 100px;
+    grid-template-rows: 100px 400px 150px;
+    grid-template-areas: "header header header header" 
+    "sidebar1 image info sidebar2"
+    "footer footer map map";
+}
+.sec1{
+    grid-area:header;
+    background-color: #af4e21;
+    padding: 10px;
+    
+}
+.sec2{
+    grid-area:info;
+    padding-top: 100px;
+
+}
+.sec3{
+    grid-area:image;
+    padding-top: 80px;
+}
+.sec4{
+    grid-area:footer;
+    background-color:#af4e21;
+    padding: 10px;
+}
+.sec5{
+    grid-area:map;
+    height: 100px;
+}
+
+.shop{
+    position:relative ;
+    left:100px;
+    top: 50px;
+    height: 400px;
+    width: 360px;
+    background-color:aqua;
+}
+.toevoegen{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+
+}
+.buy{
+    position: absolute;
+    bottom: 70px;
+    
+}
+.omschrijving{
+    position: absolute;
+    left: 50px;
+    font-weight: bolder;
+    font-size: larger;
+}
+.product{
+    position: relative;
+    
+}
